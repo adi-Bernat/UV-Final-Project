@@ -1,0 +1,45 @@
+/* =====================================
+   UV - FAVORITES PAGE
+===================================== */
+
+.favorites-description {
+  text-align: center;
+  color: #46533e;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.favorites-count {
+  color: #46533e;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.favorites-empty {
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 40px 25px;
+  text-align: center;
+
+  background: #f5f1e8;
+  border: 1px solid #ded7c8;
+  border-radius: 18px;
+}
+
+.favorites-empty-heart {
+  display: block;
+  font-size: 60px;
+  color: #46533e;
+  margin-bottom: 12px;
+}
+
+.favorites-empty h2 {
+  color: #46533e;
+  margin-bottom: 12px;
+}
+
+.favorites-empty p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}

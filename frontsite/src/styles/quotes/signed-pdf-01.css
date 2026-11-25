@@ -1,0 +1,64 @@
+/* =====================================
+   UV - SIGNED PDF DOWNLOAD
+===================================== */
+
+.uv-signed-pdf-area {
+  margin-top: 15px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.uv-signed-pdf-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  padding: 13px 18px;
+
+  background: #46533e;
+  color: #ffffff;
+
+  border: 1px solid #46533e;
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.uv-signed-pdf-button:hover:not(:disabled) {
+  background: #35412e;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.uv-signed-pdf-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.uv-signed-pdf-button:focus-visible {
+  outline: 3px solid #d99b47;
+  outline-offset: 3px;
+}
+
+.uv-signed-pdf-note {
+  margin-top: 8px;
+  color: #777b70;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+html.uv-a11y2-motion .uv-signed-pdf-button {
+  transition: none !important;
+  transform: none !important;
+}

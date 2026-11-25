@@ -1,0 +1,43 @@
+.uv-footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 11px 17px;
+    background: #f5f1e8;
+    color: #46533e;
+
+    border: 1px solid #ded5c7;
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.uv-footer-socials a span {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.uv-footer-socials a:hover {
+    background: #e5dac9;
+    color: #303d2b;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .uv-footer-socials {
+        gap: 9px;
+    }
+
+    .uv-footer-socials a {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}

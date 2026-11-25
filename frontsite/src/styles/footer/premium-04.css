@@ -1,0 +1,43 @@
+@media (max-width: 650px) {
+  .uv2-container {
+    padding: 30px 22px 0;
+  }
+
+  .uv2-top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+    margin-bottom: 45px;
+    gap: 24px;
+  }
+
+  .uv2-top h2 {
+    font-size: 27px;
+  }
+
+  .uv2-main-button {
+    width: 100%;
+  }
+
+  .uv2-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px 22px;
+    padding-bottom: 40px;
+  }
+
+  .uv2-brand,
+  .uv2-contact {
+    grid-column: 1 / -1;
+  }
+
+  .uv2-logo-box img {
+    width: 115px;
+  }
+
+  .uv2-bottom {
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}

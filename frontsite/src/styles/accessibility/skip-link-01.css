@@ -1,0 +1,41 @@
+
+/* ==================================
+   UV - SKIP TO MAIN CONTENT
+================================== */
+
+/* מוסתר מחוץ למסך באופן רגיל */
+a.uv-skip-link {
+  position: fixed !important;
+  top: -120px !important;
+  right: 20px !important;
+  z-index: 99999 !important;
+
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 13px 20px !important;
+
+  clip: auto !important;
+  clip-path: none !important;
+  overflow: visible !important;
+
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  background: #f5f1e8;
+  color: #303d2b;
+  border: 2px solid #46533e;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* הצגה בעת התמקדות במקלדת */
+a.uv-skip-link:focus,
+a.uv-skip-link:focus-visible {
+  top: 12px !important;
+  outline: 3px solid #d99b47 !important;
+  outline-offset: 3px;
+}

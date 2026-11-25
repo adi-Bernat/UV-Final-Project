@@ -1,0 +1,49 @@
+.contact-success {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 55px 30px;
+
+  background: #f1e8da;
+  border: 1px solid #ded1bd;
+  border-radius: 24px;
+
+  text-align: center;
+}
+
+.contact-success h2 {
+  font-size: 32px;
+  color: #46533e;
+  margin: 0 0 20px;
+}
+
+.contact-success p {
+  color: #756b5e;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-whatsapp-link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 0 20px;
+}
+
+.contact-new-message {
+  display: block;
+  margin: 15px auto 0;
+  padding: 10px;
+
+  border: none;
+  background: transparent;
+  color: #46533e;
+
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-error {
+  color: #a33b32;
+  font-size: 15px;
+}

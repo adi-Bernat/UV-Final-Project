@@ -1,0 +1,98 @@
+
+/* תאריך הפנייה */
+.admin-message-date {
+  border-top: 1px solid #ded1bd;
+  padding-top: 15px;
+  margin-top: 25px;
+  font-size: 14px !important;
+}
+
+/* כותרת ומיתוג */
+.admin-dashboard-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.admin-dashboard-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.admin-dashboard-brand h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.admin-dashboard-logo {
+  width: 220px;
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+.admin-dashboard-header .admin-logout-button {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ארבעה כפתורי ניהול בשתי שורות */
+.admin-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  width: calc(100% - 32px);
+  max-width: 600px;
+  margin: 40px auto;
+}
+.admin-action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 12px 18px;
+  box-sizing: border-box;
+  background: #294b37;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color .2s ease;
+}
+.admin-action-button:hover {
+  background: #41654c;
+  color: white;
+}
+.admin-action-button:focus-visible {
+  outline: 3px solid #9cb9a4;
+  outline-offset: 3px;
+}
+
+/* התאמה למובייל */
+@media (max-width: 768px) {
+  .admin-dashboard-header { flex-direction: column; }
+  .admin-messages-grid { grid-template-columns: 1fr; }
+  .admin-dashboard-header h1 { font-size: 34px; }
+  .admin-actions-grid { gap: 12px; margin: 28px auto; }
+  .admin-action-button {
+    min-height: 60px;
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .admin-dashboard-header { gap: 25px; }
+  .admin-dashboard-header .admin-logout-button {
+    position: static;
+    transform: none;
+  }
+  .admin-dashboard-logo { width: 170px; }
+}

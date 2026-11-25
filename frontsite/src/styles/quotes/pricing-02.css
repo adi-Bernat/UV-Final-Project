@@ -1,0 +1,63 @@
+.admin-quotes-page .quote-segment:focus-visible {
+  outline: 3px solid #9caf8b;
+  outline-offset: 2px;
+}
+
+.admin-quotes-page .quote-segment:disabled {
+  opacity: .65;
+  cursor: not-allowed;
+}
+
+.admin-quotes-page .quote-mode-hint {
+  color: #756b5e;
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* במצב גלובלי שומרים שורות פירוט ללא כמות וללא מחירי שורה */
+
+.admin-quotes-page .quote-global-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 19px;
+  margin-bottom: 12px;
+  border-radius: 15px;
+  background: #f1e8da;
+  border: 1px solid #e0d5c5;
+}
+
+.admin-quotes-page .quote-global-item label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #625b4f;
+  margin: 0;
+}
+
+.admin-quotes-page .quote-global-item input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fffdf8;
+}
+
+.admin-quotes-page .quote-global-item .quote-remove-button {
+  align-self: flex-start;
+  width: auto;
+  margin-top: 3px;
+  padding: 9px 18px;
+}
+
+@media (max-width: 600px) {
+  .admin-quotes-page .quote-segment {
+    font-size: 14px;
+    padding: 11px 6px;
+  }
+}
+
+@media print {
+  .admin-quotes-page .quote-segmented-field,
+  .admin-quotes-page .quote-global-item {
+    break-inside: avoid;
+  }
+}

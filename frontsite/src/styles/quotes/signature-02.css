@@ -1,0 +1,36 @@
+.quote-approved-banner {
+  max-width: 850px;
+  margin: 0 auto 20px;
+  padding: 15px 20px;
+  border: 1px solid #b9c9b0;
+  border-radius: 13px;
+  background: #e9efe3;
+  color: #385333;
+  text-align: center;
+  font-weight: 700;
+}
+
+.quote-signed-image {
+  display: block;
+  width: min(100%, 350px);
+  height: auto;
+  border: 1px solid #ded5c7;
+  margin-top: 18px;
+}
+
+@media print {
+  .quote-approved-banner,
+  .quote-customer-print-button,
+  .quote-approval-form {
+    display: none !important;
+  }
+
+  .quote-customer-page {
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .quote-customer-page .quote-client-preview {
+    margin: 0 auto !important;
+  }
+}

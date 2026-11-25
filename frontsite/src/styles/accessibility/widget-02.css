@@ -1,0 +1,97 @@
+.uv-a11y2-option {
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 15px;
+  background: #ffffff;
+  color: #303d2b;
+  border: 1px solid #c8cbbb;
+  border-radius: 11px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.uv-a11y2-option.is-active {
+  background: #46533e;
+  color: #ffffff;
+  border-color: #46533e;
+}
+
+.uv-a11y2-reset {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 16px;
+  padding: 10px;
+  background: transparent;
+  color: #303d2b;
+  border: 1px solid #46533e;
+  border-radius: 10px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.uv-a11y2-help {
+  border-top: 1px solid #d1d4c8;
+  margin-top: 18px;
+  padding-top: 15px;
+}
+
+.uv-a11y2-help p {
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: #303d2b;
+}
+
+.uv-a11y2-help a {
+  color: #303d2b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 14px;
+}
+
+/* סימון פוקוס למקלדת */
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #db913e !important;
+  outline-offset: 3px;
+}
+
+/* הגדלת גופן */
+
+html.uv-a11y2-large {
+  font-size: 112.5%;
+}
+
+html.uv-a11y2-large body :is(
+  p, li, label, input, select, textarea,
+  button, nav a, footer a
+) {
+  font-size: max(1rem, 1.1em) !important;
+  line-height: 1.6 !important;
+}
+
+/* הדגשת קישורים */
+
+html.uv-a11y2-links a[href] {
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
+}
+
+/* מצב ניגודיות גבוהה */
+
+html.uv-a11y2-contrast {
+  color-scheme: dark;
+}
+
+html.uv-a11y2-contrast body,
+html.uv-a11y2-contrast body *:not(img):not(video):not(svg):not(path) {
+  background-color: #000000 !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  text-shadow: none !important;
+}

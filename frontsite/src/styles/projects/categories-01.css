@@ -1,0 +1,94 @@
+/* =========================
+   CATEGORY PAGE
+========================= */
+
+.category-page {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 70px 30px;
+
+  direction: rtl;
+}
+
+/* כפתור חזרה באמצע */
+
+.category-page > .back-home-button {
+  display: flex;
+  width: max-content;
+
+  margin: 0 auto 35px;
+}
+
+.category-page > h1 {
+  margin: 30px 0 50px;
+
+  text-align: center;
+
+  font-size: 44px;
+  color: #4b5545;
+}
+
+.category-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.category-project-card {
+  overflow: hidden;
+
+  background: #f1e8da;
+
+  border: 1px solid #ded1bd;
+  border-radius: 20px;
+
+  text-align: right;
+
+  box-shadow: 0 8px 22px rgba(60, 55, 45, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.category-project-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 14px 32px rgba(60, 55, 45, 0.15);
+}
+
+.category-project-card img {
+  display: block;
+
+  width: 100%;
+  height: 240px;
+
+  object-fit: cover;
+}
+
+.category-project-card h2 {
+  margin: 25px 25px 12px;
+
+  color: #4b5545;
+  font-size: 24px;
+}
+
+.category-project-card p {
+  margin: 0 25px 25px;
+
+  color: #756b5e;
+
+  line-height: 1.7;
+}
+
+.project-card-link {
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+
+  cursor: pointer;
+}

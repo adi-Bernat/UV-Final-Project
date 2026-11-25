@@ -1,0 +1,38 @@
+.quote-share-result {
+  margin-top: 18px;
+  padding: 18px;
+  background: #f5f1e8;
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+}
+
+.quote-share-result p {
+  margin-top: 0;
+  color: #46533e;
+}
+
+.quote-share-result input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ded1bd;
+  border-radius: 9px;
+  background: white;
+  color: #333;
+  text-align: left;
+}
+
+.quote-share-result button {
+  margin-top: 12px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 25px;
+  background: #46533e;
+  color: white;
+  cursor: pointer;
+}
+
+.quote-share-error {
+  color: #a2453c;
+  text-align: center;
+}

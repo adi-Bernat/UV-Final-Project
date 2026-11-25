@@ -1,0 +1,78 @@
+/* טאבלט וטלפון */
+
+@media (max-width: 950px) {
+  .quote-form {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-form > .quote-section:nth-of-type(1),
+  .quote-form > .quote-section:nth-of-type(2),
+  .quote-form > .quote-section:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .quote-form > .quote-section:nth-of-type(3) {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-quotes-page {
+    padding: 35px 15px 70px;
+  }
+
+  .quote-section {
+    padding: 22px 18px;
+  }
+
+  .quote-item {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .quote-item label:nth-of-type(2),
+  .quote-item select {
+    grid-column: 1;
+  }
+
+  .quote-item label:nth-of-type(3),
+  .quote-item input:nth-of-type(2) {
+    grid-column: 2;
+  }
+
+  .quote-item label:nth-of-type(4),
+  .quote-item input:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 5 / 6;
+  }
+
+  .quote-item label:nth-of-type(4) {
+    grid-row: 5;
+  }
+
+  .quote-item input:nth-of-type(3) {
+    grid-row: 6;
+  }
+
+  .quote-item label:nth-of-type(5) {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .quote-item input:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 6;
+  }
+
+  .quote-item > p {
+    grid-column: 1 / -1;
+    grid-row: 7;
+  }
+
+  .quote-remove-button {
+    grid-column: 1 / -1;
+    grid-row: 8;
+  }
+}

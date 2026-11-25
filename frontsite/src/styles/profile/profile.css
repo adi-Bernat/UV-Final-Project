@@ -1,0 +1,111 @@
+
+/* רקע עמוד הפרופיל */
+.uv-profile-page {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 16px;
+  background: #f5f1e8;
+}
+
+/* כרטיס הפרופיל */
+.uv-profile-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px #00000012;
+  color: #293a2e;
+  text-align: center;
+}
+
+.uv-profile-card h1 {
+  color: #294b37;
+  font-size: 30px;
+  margin: 0 0 25px;
+}
+
+/* תמונת הפרופיל */
+.uv-profile-avatar {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e8dfd0;
+  display: grid;
+  place-items: center;
+  font-size: 55px;
+}
+
+.uv-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* העלאת תמונה */
+.uv-profile-upload {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #e8dfd0;
+  border-radius: 10px;
+  color: #294b37;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.uv-profile-upload input {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  margin-top: 8px;
+}
+
+/* טופס עדכון פרטים */
+.uv-profile-card form {
+  display: grid;
+  gap: 12px;
+  text-align: right;
+}
+
+.uv-profile-card form label {
+  font-weight: 600;
+}
+
+.uv-profile-card form input {
+  padding: 12px;
+  border: 1px solid #b8b7ad;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.uv-profile-card form button {
+  padding: 13px;
+  background: #294b37;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.uv-profile-success { color: #216b3b; }
+.uv-profile-error { color: #a22b25; }
+.uv-profile-back {
+  display: inline-block;
+  margin-top: 24px;
+  color: #294b37;
+  font-weight: 600;
+}
+
+/* התאמה למובייל */
+@media (max-width: 600px) {
+  .uv-profile-page { padding: 24px 12px; }
+  .uv-profile-card { padding: 22px 16px; }
+  .uv-profile-card h1 { font-size: 26px; }
+}

@@ -1,0 +1,96 @@
+/* ADMIN DASHBOARD */
+
+.admin-dashboard-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+.admin-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 65px;
+}
+
+.admin-dashboard-header h1 {
+  color: #46533e;
+  font-size: 42px;
+  margin: 0 0 10px;
+}
+
+.admin-dashboard-header p {
+  color: #87725d;
+  font-size: 18px;
+  margin: 0;
+}
+
+.admin-logout-button {
+  padding: 12px 25px;
+  background: #46533e;
+  color: #fffdf8;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.admin-logout-button:hover {
+  background: #303d2b;
+}
+
+.admin-messages-section h2 {
+  font-size: 30px;
+  color: #46533e;
+  margin-bottom: 30px;
+}
+
+.admin-messages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.admin-message-card {
+  padding: 30px;
+  background: #f1e8da;
+  border: 1px solid #ded1bd;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(60, 55, 45, 0.06);
+}
+
+.admin-message-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.admin-message-top h3 {
+  color: #46533e;
+  font-size: 23px;
+  margin: 0;
+}
+
+.admin-status {
+  background: #e0e5d7;
+  color: #46533e;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.admin-message-card p {
+  color: #756b5e;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.admin-message-card a {
+  color: #46533e;
+  text-decoration: underline;
+}

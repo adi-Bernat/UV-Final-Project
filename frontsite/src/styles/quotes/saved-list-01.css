@@ -1,0 +1,100 @@
+/* SAVED QUOTES */
+
+.admin-quote-list-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.admin-quote-list-header {
+  margin: 45px auto 50px;
+}
+
+.admin-quote-list-header h1 {
+  font-size: 40px;
+  color: #46533e;
+  margin: 0 0 15px;
+}
+
+.admin-quote-list-header p {
+  color: #87725d;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.quote-new-link {
+  display: inline-block;
+  padding: 14px 26px;
+  background: #46533e;
+  color: #fffdf8;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.quote-new-link:hover {
+  background: #303d2b;
+}
+
+.quote-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  text-align: right;
+}
+
+.quote-list-card {
+  padding: 30px;
+  background: #fffdf8;
+  border: 1px solid #ded1bd;
+  border-radius: 20px;
+  box-shadow: 0 6px 22px rgba(60, 55, 45, 0.06);
+}
+
+.quote-list-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.quote-list-card h2 {
+  margin: 0;
+  color: #46533e;
+  font-size: 24px;
+}
+
+.quote-list-status {
+  background: #e0e5d7;
+  color: #46533e;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.quote-list-card p {
+  color: #756b5e;
+  line-height: 1.7;
+}
+
+.quote-list-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #e4ddd0;
+  padding-top: 20px;
+  margin-top: 25px;
+  color: #46533e;
+}
+
+.quote-list-total strong {
+  font-size: 23px;
+}
+
+.quote-list-empty {
+  color: #87725d;
+  font-size: 18px;
+}

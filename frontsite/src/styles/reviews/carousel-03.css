@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+  .uv-reviews-section {
+    padding: 55px 12px;
+  }
+
+  .uv-reviews-carousel {
+    gap: 7px;
+  }
+
+  .uv-review-card {
+    min-height: 320px;
+    padding: 28px 16px;
+  }
+
+  .uv-reviews-arrow {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    font-size: 21px;
+  }
+
+  .uv-reviews-subtitle {
+    padding: 0 12px;
+  }
+}
+
+/* הפחתת תנועה */
+
+html.uv-a11y2-motion .uv-review-card {
+  animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uv-review-card {
+    animation: none;
+  }
+}

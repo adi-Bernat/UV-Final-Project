@@ -1,0 +1,232 @@
+
+.uv-register-page {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #f5f1e8;
+}
+
+.uv-register-card {
+  width: min(100%, 480px);
+  padding: 38px;
+  box-sizing: border-box;
+  background: #fffdf8;
+  border: 1px solid #ded5c7;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(40, 45, 34, .08);
+}
+
+.uv-register-card h1 {
+  margin: 0 0 12px;
+  color: #46533e;
+  font-size: 32px;
+}
+
+.uv-register-card h2 {
+  color: #46533e;
+  font-size: 21px;
+}
+
+.uv-register-card p {
+  color: #625f55;
+  line-height: 1.8;
+}
+
+.uv-register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.uv-register-card label {
+  color: #46533e;
+  font-weight: 600;
+}
+
+.uv-register-card input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #b7baa9;
+  border-radius: 10px;
+  background: white;
+  color: #263124;
+  font: inherit;
+}
+
+.uv-register-card button,
+.uv-register-link {
+  padding: 13px 20px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 12px;
+  background: #46533e;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.uv-register-card button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.uv-register-error {
+  color: #a32e2e !important;
+}
+
+.uv-register-back,
+.uv-register-link {
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.uv-register-card input:focus-visible,
+.uv-register-card button:focus-visible {
+  outline: 3px solid #8fa77a;
+  outline-offset: 2px;
+}
+
+/* הצגת והסתרת סיסמאות */
+
+.uv-register-password-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  margin-top: 4px;
+
+  color: #46533e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.uv-register-card .uv-register-password-toggle input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+
+  accent-color: #46533e;
+  cursor: pointer;
+}
+
+.uv-register-password-toggle span {
+  line-height: 1.5;
+}
+
+/* =====================================
+   REGISTER FORM - VALIDATION
+===================================== */
+
+/* הסבר על שדות החובה */
+
+.uv-register-form-info {
+    color: #46533e;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* חיווי שמופיע מתחת לכל שדה */
+
+.uv-register-card .uv-register-feedback {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 5px 0 16px;
+}
+
+/* הסבר לפני הקלדה */
+
+.uv-register-card .uv-register-feedback.is-hint {
+    color: #6b7167;
+}
+
+/* שדה תקין */
+
+.uv-register-card .uv-register-feedback.is-valid {
+    color: #26723c;
+    font-weight: 600;
+}
+
+/* שדה לא תקין */
+
+.uv-register-card .uv-register-feedback.is-invalid {
+    color: #b42318;
+    font-weight: 600;
+}
+
+/* מסגרת ירוקה */
+
+.uv-register-card input.uv-register-field-valid {
+    border: 2px solid #26723c;
+}
+
+/* מסגרת אדומה */
+
+.uv-register-card input.uv-register-field-invalid {
+    border: 2px solid #b42318;
+}
+
+/* נגישות במקלדת */
+
+.uv-register-card input:focus-visible,
+.uv-register-card button:focus-visible,
+.uv-register-card a:focus-visible {
+    outline: 3px solid #d99b47;
+    outline-offset: 3px;
+}
+
+/* כפתור הרשמה חסום */
+
+.uv-register-card button[type="submit"]:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+/* הסבר מתחת לכפתור */
+
+.uv-register-submit-help {
+    font-size: 13px;
+    color: #6b7167;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* קישור למשתמש שכבר רשום */
+
+.uv-register-login-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.uv-register-login-text a {
+    color: #46533e;
+    font-weight: 600;
+}
+
+/* הודעת הצלחה */
+
+.uv-register-success {
+    text-align: center;
+}
+
+.uv-register-success h1 {
+    color: #26723c;
+}
+
+.uv-register-success p {
+    line-height: 1.8;
+}

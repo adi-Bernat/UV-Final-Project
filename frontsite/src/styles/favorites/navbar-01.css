@@ -1,0 +1,19 @@
+/* FAVORITES - HEADER LINK */
+
+.uv-favorites-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.uv-favorites-nav-link span:first-child {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.uv-favorites-nav-link[aria-current="page"] {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}

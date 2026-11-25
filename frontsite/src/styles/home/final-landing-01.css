@@ -1,0 +1,87 @@
+
+/* UV - Final Project Landing */
+
+.hero-section {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .uv-final-hero-intro {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 570px);
+  margin: 0 auto;
+  padding: 34px;
+  box-sizing: border-box;
+
+  /* הורדת החלונית מעט למטה */
+  transform: translateY(50px);
+
+  background: rgba(28, 38, 27, 0.84);
+  border: 1px solid rgba(245, 241, 232, 0.3);
+  border-radius: 22px;
+
+  direction: rtl;
+  text-align: center;
+}
+
+.uv-final-hero-intro h1 {
+  margin: 0 0 12px;
+  color: #f5f1e8;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.25;
+}
+
+.uv-final-hero-intro h2 {
+  margin: 0 0 18px;
+  color: #e5d7bd;
+  font-size: clamp(20px, 2.5vw, 27px);
+  line-height: 1.4;
+}
+
+.uv-final-hero-intro p {
+  margin: 0 0 24px;
+  color: #f5f1e8;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.uv-final-hero-contact {
+  display: inline-block;
+  padding: 13px 28px;
+  background: #f5f1e8;
+  color: #303d2b;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.uv-final-hero-contact:hover {
+  background: #e5dac9;
+}
+
+.uv-final-hero-contact:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+@media (max-width: 650px) {
+  .hero-section {
+    min-height: 570px;
+    padding: 75px 16px 35px;
+    align-items: flex-start;
+  }
+
+  .hero-section .uv-final-hero-intro {
+    width: 100%;
+    padding: 25px 18px;
+    transform: none;
+  }
+
+  .uv-final-hero-intro p {
+    font-size: 14px;
+  }
+}

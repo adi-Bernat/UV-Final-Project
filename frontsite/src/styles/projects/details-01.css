@@ -1,0 +1,69 @@
+/* =========================
+   PROJECT DETAILS
+========================= */
+
+.project-details-page {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 60px 40px 80px;
+
+  direction: rtl;
+}
+
+/* כפתור חזרה */
+
+.project-details-top {
+  width: 100%;
+
+  text-align: center;
+
+  padding: 0;
+
+  margin: 0 0 80px;
+
+  background: transparent;
+
+  border: none;
+  box-shadow: none;
+}
+
+.project-details-top .back-home-button {
+  margin: 0 auto;
+}
+
+/* כותרת הפרויקט */
+
+.project-details-header {
+  width: 100%;
+
+  padding: 40px 25px;
+
+  margin: 0 0 45px;
+
+  text-align: center;
+
+  background: #f3ede4;
+
+  border-radius: 22px;
+}
+
+.project-details-header h1 {
+  margin: 0 0 18px;
+
+  font-size: 42px;
+  line-height: 1.2;
+
+  color: #62513f;
+}
+
+.project-details-header p {
+  margin: 0;
+
+  font-size: 19px;
+  line-height: 1.8;
+
+  color: #87725d;
+}

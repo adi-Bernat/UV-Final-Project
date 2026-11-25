@@ -1,0 +1,99 @@
+.quote-item > p {
+  grid-column: 1 / 4;
+  grid-row: 5;
+  margin: 10px 0 0;
+  color: #46533e;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* כפתור הסרת שורה */
+
+.quote-remove-button {
+  grid-column: 4;
+  grid-row: 5;
+  background: transparent;
+  border: 1px solid #c9ada5;
+  border-radius: 9px;
+  color: #925d54;
+  padding: 9px;
+  cursor: pointer;
+}
+
+.quote-remove-button:hover {
+  background: #f7e8e3;
+}
+
+/* הוספת חומר */
+
+.quote-add-button {
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+  border: 1px dashed #8b987f;
+  border-radius: 12px;
+  color: #46533e;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.quote-add-button:hover {
+  background: #eef0e8;
+}
+
+/* סיכום מחירים */
+
+.quote-form > .quote-section:nth-of-type(3) > p {
+  color: #756b5e;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.quote-form > .quote-section:nth-of-type(3) > h3 {
+  color: #46533e;
+  font-size: 27px;
+  line-height: 1.5;
+  margin: 18px 0;
+  padding: 20px 0;
+  border-top: 1px solid #d8cebf;
+  border-bottom: 1px solid #d8cebf;
+}
+
+/* שמירה */
+
+.quote-save-button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 380px);
+  padding: 17px 28px;
+  background: #46533e;
+  color: #fffdf8;
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quote-save-button:hover {
+  background: #303d2b;
+}
+
+.quote-save-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.quote-success,
+.quote-form > p[role="alert"] {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 17px;
+}
+
+.quote-success {
+  color: #46533e;
+}

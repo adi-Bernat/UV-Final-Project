@@ -1,0 +1,97 @@
+/* אפשרויות מחיר וכמות בהצעות UV */
+
+.quote-option-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.quote-option-checkbox input {
+  width: 18px !important;
+  height: 18px;
+  flex: 0 0 auto;
+  accent-color: #46533e;
+}
+
+.quote-pricing-help,
+.quote-vat-note {
+  color: #756b5e;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.quote-preview-totals .quote-vat-breakdown {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  border-top: 1px solid #ded1bd;
+  padding-top: 14px;
+  font-size: 15px;
+}
+
+@media print {
+  .quote-preview-totals .quote-vat-breakdown {
+    break-inside: avoid;
+  }
+}
+
+/* כשהכמות מוסתרת זו הופכת לטבלת תיאורים בלבד */
+
+.quote-preview-table th:first-child:last-child,
+.quote-preview-table td:first-child:last-child {
+  text-align: right;
+}
+
+/* UV | מתגי תמחור להצעות מחיר – להוסיף בסוף App.css */
+
+.admin-quotes-page .quote-segmented-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 10px 0 14px;
+}
+
+.admin-quotes-page .quote-control-label {
+  color: #46533e;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.admin-quotes-page .quote-segmented-control {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  padding: 5px;
+  border-radius: 14px;
+  background: #eae3d6;
+  border: 1px solid #ded5c6;
+  direction: rtl;
+}
+
+.admin-quotes-page .quote-segment {
+  width: 100%;
+  margin: 0;
+  padding: 12px 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: #635f54;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .18s ease, color .18s ease, box-shadow .18s ease;
+}
+
+.admin-quotes-page .quote-segment.is-active {
+  background: #46533e;
+  border-color: #46533e;
+  color: #fffdf8;
+  box-shadow: 0 2px 7px rgba(25, 30, 25, .12);
+}
+
+.admin-quotes-page .quote-segment:not(.is-active):hover:not(:disabled) {
+  background: #f6f2ea;
+  color: #46533e;
+}

@@ -1,0 +1,74 @@
+/* =====================================
+   UV - PROJECT FAVORITES
+===================================== */
+
+.favorite-project-wrapper {
+  position: relative;
+  display: flex;
+  min-width: 0;
+}
+
+.favorite-project-wrapper > .category-project-card {
+  flex: 1;
+  min-width: 0;
+}
+
+/* כפתור הלב */
+
+.project-favorite-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background: rgba(245, 241, 232, 0.96);
+  color: #46533e;
+
+  border: 1px solid rgba(70, 83, 62, 0.2);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.project-favorite-button:hover {
+  transform: scale(1.08);
+}
+
+/* פרויקט שנוסף למועדפים */
+
+.project-favorite-button.is-favorite {
+  color: #b64b51;
+  background: #fff8f5;
+}
+
+/* נגישות במקלדת */
+
+.project-favorite-button:focus-visible {
+  outline: 3px solid #d99b47;
+  outline-offset: 3px;
+}
+
+/* התאמה לטלפון */
+
+@media (max-width: 768px) {
+  .project-favorite-button {
+    top: 10px;
+    left: 10px;
+    width: 42px;
+    height: 42px;
+  }
+}

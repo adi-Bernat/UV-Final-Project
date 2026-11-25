@@ -1,0 +1,97 @@
+@media (max-width: 700px) {
+  .admin-quote-list-page {
+    padding: 40px 18px;
+  }
+
+  .quote-list-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-quote-list-header h1 {
+    font-size: 32px;
+  }
+
+  .quote-list-card {
+    padding: 22px;
+  }
+}
+
+.quote-edit-link {
+  display: block;
+  width: fit-content;
+  margin: 25px auto 0;
+  padding: 12px 28px;
+  background: #46533e;
+  color: #fffdf8;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quote-edit-link:hover {
+  background: #303d2b;
+}
+
+/* כפתורי הצעות מחיר במערכת הניהול */
+
+.admin-quotes-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 30px auto;
+}
+
+.admin-quotes-action {
+  display: inline-block;
+  padding: 14px 26px;
+  background: #46533e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.admin-quotes-action:hover {
+  background: #303d2b;
+}
+
+.admin-quotes-action.secondary {
+  background: #eee8dc;
+  color: #46533e;
+  border: 1px solid #c9c1b3;
+}
+
+.admin-quotes-action.secondary:hover {
+  background: #e0d8c8;
+}
+
+/* קישור אישי להצעת מחיר */
+
+.quote-share-area {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.quote-share-button {
+  width: 100%;
+  padding: 13px 20px;
+  background: #eae3d6;
+  color: #46533e;
+  border: 1px solid #c9c1b3;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.quote-share-button:hover {
+  background: #ddd4c5;
+}
+
+.quote-share-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}

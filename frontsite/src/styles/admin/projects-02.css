@@ -1,0 +1,22 @@
+.admin-project-view {
+  display: inline-block;
+  margin-top: 15px;
+  color: #46533e;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .admin-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-projects-page {
+    padding: 40px 20px;
+  }
+}

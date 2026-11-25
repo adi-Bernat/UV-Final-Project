@@ -1,0 +1,76 @@
+/* HERO LOGO */
+
+.hero-logo {
+  display: block;
+  width: 420px;
+  max-width: 85%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 600px) {
+  .hero-logo {
+    width: 280px;
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+/* מיקום הלוגו והכפתור בצד של תמונת הבית */
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section .hero-content {
+  position: absolute !important;
+
+  right: 35px !important;
+  left: auto !important;
+  bottom: 35px !important;
+  top: auto !important;
+
+  transform: none !important;
+  margin: 0 !important;
+
+  width: 210px !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.hero-section .hero-content img {
+  width: 165px !important;
+  max-width: 100%;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+.hero-section .hero-button {
+  margin: 0 !important;
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+
+/* התאמה לטלפון */
+
+@media (max-width: 600px) {
+  .hero-section .hero-content {
+    right: 15px !important;
+    bottom: 20px !important;
+    width: 160px !important;
+  }
+
+  .hero-section .hero-content img {
+    width: 125px !important;
+  }
+
+  .hero-section .hero-button {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+}

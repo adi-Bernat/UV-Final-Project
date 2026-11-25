@@ -1,0 +1,97 @@
+.admin-status-select {
+  padding: 10px 15px;
+  border: 1px solid #cbd3c0;
+  border-radius: 20px;
+  background: #e0e5d7;
+  color: #46533e;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.admin-status-select:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.admin-status-error {
+  color: #a33b32;
+}
+
+/* DELETE CONTACT MESSAGE */
+
+.admin-delete-button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: transparent;
+  color: #a34e45;
+  border: 1px solid #c98b82;
+  border-radius: 25px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.admin-delete-button:hover {
+  background: #f5e1dc;
+}
+
+/* CONFIRMATION MODAL */
+
+.admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  background: rgba(35, 40, 32, 0.55);
+}
+
+.admin-modal {
+  width: 100%;
+  max-width: 440px;
+  padding: 40px 30px;
+
+  background: #f5f1e8;
+  border-radius: 24px;
+
+  text-align: center;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.admin-modal h2 {
+  color: #46533e;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+.admin-modal p {
+  color: #756b5e;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.admin-modal-warning {
+  color: #a34e45 !important;
+  font-size: 15px !important;
+}
+
+.admin-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.admin-modal-actions button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+}

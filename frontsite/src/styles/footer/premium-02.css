@@ -1,0 +1,87 @@
+.uv2-content {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.25fr)
+    minmax(0, 0.7fr)
+    minmax(0, 0.9fr)
+    minmax(0, 1.2fr);
+  gap: 45px;
+
+  padding-bottom: 60px;
+}
+
+/* לוגו ותיאור העסק */
+
+.uv2-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.uv2-logo-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f1e8;
+  border-radius: 16px;
+  padding: 15px 22px;
+}
+
+.uv2-logo-box img {
+  display: block;
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.uv2-brand p {
+  max-width: 270px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #d7ddcf;
+}
+
+/* קישורים */
+
+.uv2-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+}
+
+.uv2-column h3 {
+  color: #f5f1e8;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.uv2-column > a {
+  color: #d7ddcf;
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+
+  transition: color 0.2s ease;
+}
+
+.uv2-column > a:hover {
+  color: #fffdf8;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* אייקונים חברתיים */
+
+.uv2-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}

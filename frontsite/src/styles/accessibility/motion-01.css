@@ -1,0 +1,40 @@
+/* ======================================
+   ACCESSIBILITY - REDUCE MOTION FIX
+====================================== */
+
+/* ביטול גלילה חלקה */
+
+html.uv-a11y2-motion,
+html.uv-a11y2-motion body {
+  scroll-behavior: auto !important;
+}
+
+/* ביטול אנימציות ומעברים */
+
+html.uv-a11y2-motion *,
+html.uv-a11y2-motion *::before,
+html.uv-a11y2-motion *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+/* ביטול תנועה בכרטיסי השירותים */
+
+html.uv-a11y2-motion .service-card:hover,
+html.uv-a11y2-motion .service-card-link:hover {
+  transform: none !important;
+}
+
+/* ביטול תנועה בכפתורים */
+
+html.uv-a11y2-motion .hero-button:hover,
+html.uv-a11y2-motion .uv2-main-button:hover {
+  transform: none !important;
+}
+
+/* ביטול תנועה באייקונים החברתיים בפוטר */
+
+html.uv-a11y2-motion .uv2-socials .uv2-social:hover {
+  transform: none !important;
+}

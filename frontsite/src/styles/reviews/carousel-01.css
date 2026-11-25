@@ -1,0 +1,99 @@
+/* =====================================
+   UV - CUSTOMER REVIEWS CAROUSEL
+===================================== */
+
+.uv-reviews-section {
+  background: #eee9df;
+  padding: 85px 20px;
+  text-align: center;
+  direction: rtl;
+}
+
+.uv-reviews-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.uv-reviews-eyebrow {
+  display: block;
+  color: #7b836e;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.uv-reviews-section h2 {
+  color: #46533e;
+  font-size: clamp(27px, 4vw, 39px);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.uv-reviews-subtitle {
+  color: #77776e;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* הקרוסלה */
+
+.uv-reviews-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* כרטיס ביקורת */
+
+.uv-review-card {
+  flex: 1;
+  min-width: 0;
+  max-width: 700px;
+  min-height: 290px;
+  padding: 40px 50px;
+
+  background: #f8f5ef;
+  border: 1px solid #ddd6c8;
+  border-radius: 22px;
+
+  box-shadow: 0 8px 30px rgba(40, 45, 34, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  animation: uv-review-enter 0.35s ease;
+}
+
+.uv-review-quote-icon {
+  font-family: Georgia, serif;
+  font-size: 75px;
+  color: #9ba58b;
+  line-height: 0.8;
+  margin-bottom: 18px;
+}
+
+.uv-review-text {
+  color: #46533e;
+  font-size: clamp(17px, 2.5vw, 21px);
+  line-height: 1.9;
+  font-weight: 400;
+  margin: 0 0 22px;
+}
+
+.uv-review-divider {
+  width: 45px;
+  height: 1px;
+  background: #aab19b;
+  margin-bottom: 17px;
+}
+
+.uv-review-name {
+  color: #46533e;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}

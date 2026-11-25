@@ -1,0 +1,59 @@
+.about-bottom p {
+  font-size: 18px;
+  color: #756b5e;
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #46533e;
+  color: #f5f1e8;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.about-button:hover {
+  background: #303d2b;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 50px 20px;
+  }
+
+  .about-intro {
+    margin-bottom: 65px;
+  }
+
+  .about-intro p {
+    font-size: 17px;
+  }
+
+  .about-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values {
+    margin-bottom: 65px;
+  }
+
+  .about-values h2 {
+    font-size: 28px;
+  }
+
+  .about-bottom h2 {
+    font-size: 27px;
+  }
+}
+
+.about-logo {
+  display: block;
+  width: 300px;
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 35px;
+}

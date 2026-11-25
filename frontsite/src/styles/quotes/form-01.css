@@ -1,0 +1,100 @@
+/* =========================
+   UV - QUOTES DESIGN
+========================= */
+
+.admin-quotes-page {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 55px 30px 100px;
+  background: #f5f1e8;
+  direction: rtl;
+}
+
+/* כותרת העמוד */
+
+.admin-quotes-page > h1 {
+  text-align: center;
+  font-size: clamp(30px, 4vw, 46px);
+  color: #46533e;
+  letter-spacing: 0;
+  margin: 35px 0 50px;
+}
+
+.admin-quotes-page > .back-home-button {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* מבנה הטופס */
+
+.quote-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+/* כרטיסים */
+
+.quote-section {
+  min-width: 0;
+  padding: 32px;
+  background: #fffdf8;
+  border: 1px solid #e4ddd0;
+  border-radius: 22px;
+  box-shadow: 0 8px 28px rgba(60, 55, 45, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quote-section h2 {
+  font-size: 24px;
+  color: #46533e;
+  margin: 0 0 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e8e0d3;
+}
+
+.quote-section label {
+  color: #625b4f;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* שדות */
+
+.quote-section input,
+.quote-section select,
+.quote-section textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 15px;
+  background: #f5f1e8;
+  border: 1px solid #ded5c7;
+  border-radius: 11px;
+  color: #343c31;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.quote-section textarea {
+  resize: vertical;
+}
+
+.quote-section input:focus,
+.quote-section select:focus,
+.quote-section textarea:focus {
+  outline: 2px solid #9ca891;
+  border-color: #7c8a71;
+}
+
+/* סידור חלקי הטופס */
+
+.quote-form > .quote-section:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 1;
+}

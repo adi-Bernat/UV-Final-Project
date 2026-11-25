@@ -1,0 +1,382 @@
+/* UV | Public projects search and category filters */
+.uv-project-filters {
+    margin: 24px 0 28px;
+    padding: 20px;
+    background: #f5f1e8;
+    border: 1px solid #e5dacb;
+    border-radius: 14px;
+}
+
+.uv-project-filters-fields {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.uv-project-filter-field {
+    display: flex;
+    flex: 1 1 220px;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 180px;
+}
+
+.uv-project-filter-field label {
+    color: #3d493a;
+    font-weight: 600;
+}
+
+.uv-project-filter-field input,
+.uv-project-filter-field select {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 13px;
+    border: 1px solid #c7bcad;
+    border-radius: 9px;
+    background: #fffdf9;
+    color: #29362c;
+    font: inherit;
+}
+
+.uv-project-filter-field input:focus-visible,
+.uv-project-filter-field select:focus-visible,
+.uv-project-filter-reset:focus-visible {
+    outline: 3px solid #b99359;
+    outline-offset: 3px;
+}
+
+.uv-project-filter-reset {
+    min-height: 44px;
+    padding: 10px 18px;
+    background: #4c604b;
+    border: 0;
+    border-radius: 9px;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.uv-project-filter-reset:hover:not(:disabled) {
+    background: #354735;
+}
+
+.uv-project-filter-reset:disabled {
+    opacity: 0.48;
+    cursor: not-allowed;
+}
+
+.uv-project-filter-count {
+    margin: 14px 0 0;
+    color: #4b5847;
+}
+
+.uv-project-filter-empty {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    background: #f5f1e8;
+    border-radius: 12px;
+}
+
+.uv-project-filter-empty .uv-project-filter-reset {
+    margin-top: 8px;
+}
+
+.uv-all-projects-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .uv-project-filters { padding: 16px; }
+    .uv-project-filter-field { flex-basis: 100%; min-width: 0; }
+    .uv-project-filter-reset { width: 100%; }
+}
+
+
+/* =====================================
+   מעבר בין תצוגת כרטיסיות לתצוגת טבלה
+===================================== */
+.uv-project-view-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 20px;
+}
+
+.uv-project-view-toggle {
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid #d7cbb9;
+    border-radius: 11px;
+    background: #f5f1e8;
+}
+
+.uv-project-view-toggle button {
+    min-height: 40px;
+    padding: 9px 16px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #3d493a;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.uv-project-view-toggle button:hover:not(.is-active) {
+    background: #e9e1d5;
+}
+
+.uv-project-view-toggle button.is-active {
+    background: #4c604b;
+    color: #fff;
+}
+
+.uv-project-view-toggle button:focus-visible,
+.uv-project-table-link:focus-visible,
+.uv-project-table-favorite button:focus-visible {
+    outline: 3px solid #b99359;
+    outline-offset: 3px;
+}
+
+.uv-project-table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+    border: 1px solid #e5dacb;
+    border-radius: 14px;
+    background: #fffdf9;
+}
+
+.uv-project-table {
+    width: 100%;
+    min-width: 670px;
+    border-collapse: collapse;
+    color: #29362c;
+}
+
+.uv-project-table th,
+.uv-project-table td {
+    padding: 13px 14px;
+    text-align: right;
+    vertical-align: middle;
+    border-bottom: 1px solid #e9e3d9;
+}
+
+.uv-project-table thead {
+    background: #f5f1e8;
+}
+
+.uv-project-table th {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.uv-project-table tbody tr:hover {
+    background: #f9f6f0;
+}
+
+.uv-project-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.uv-project-table-image {
+    width: 110px;
+}
+
+.uv-project-table-image img {
+    display: block;
+    width: 84px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.uv-project-table-link {
+    color: #344b35;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.uv-project-table-description {
+    min-width: 210px;
+    line-height: 1.5;
+}
+
+.uv-project-table-favorite {
+    width: 100px;
+    text-align: center !important;
+}
+
+/* כפתור הלב מוגדר כממוקם על גבי הכרטיס; בטבלה נבטל את המיקום הזה */
+.uv-project-table-favorite .project-favorite-button {
+    position: static;
+    inset: auto;
+    transform: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .uv-project-view-toolbar { justify-content: center; }
+    .uv-project-view-toggle { width: 100%; }
+    .uv-project-view-toggle button { flex: 1; }
+}
+
+/* =========================================================
+   PHONE / CHROME DEVICE MODE
+   Preserve a REAL table instead of turning each row into a card.
+   The user can switch between cards and a horizontally scrollable table.
+========================================================= */
+@media (max-width: 700px) {
+    .category-page {
+        box-sizing: border-box;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .category-page .uv-project-filters {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        padding: 14px;
+        margin-bottom: 16px;
+    }
+
+    .category-page .uv-project-filters-fields {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .category-page .uv-project-filter-field,
+    .category-page .uv-project-filter-field input,
+    .category-page .uv-project-filter-field select {
+        box-sizing: border-box;
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .category-page .uv-project-filter-field input,
+    .category-page .uv-project-filter-field select {
+        font-size: 16px;
+    }
+
+    .category-page .uv-project-filter-reset {
+        width: 100%;
+        min-height: 46px;
+    }
+
+    /* Make view-mode controls fully visible and tappable. */
+    .category-page .uv-project-view-toolbar {
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        z-index: 2;
+        justify-content: stretch;
+        width: 100%;
+        max-width: 100%;
+        margin: 8px 0 18px;
+    }
+
+    .category-page .uv-project-view-toggle {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        width: 100%;
+        min-width: 0;
+    }
+
+    .category-page .uv-project-view-toggle button {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        width: 100%;
+        min-height: 48px;
+        padding: 10px 7px;
+        white-space: nowrap;
+        touch-action: manipulation;
+        cursor: pointer;
+    }
+
+    /* Cards remain a single column on narrow screens. */
+    .category-page .category-projects-grid {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .category-page .favorite-project-wrapper,
+    .category-page .category-project-card {
+        box-sizing: border-box;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    /* Real table: scroll sideways only inside the table container. */
+    .category-page .uv-project-table-scroll {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+        border: 1px solid #e5dacb;
+        border-radius: 12px;
+    }
+
+    .category-page .uv-project-table {
+        display: table;
+        width: 670px;
+        min-width: 670px;
+        border-collapse: collapse;
+    }
+
+    .category-page .uv-project-table thead { display: table-header-group; }
+    .category-page .uv-project-table tbody { display: table-row-group; }
+    .category-page .uv-project-table tr { display: table-row; }
+    .category-page .uv-project-table th,
+    .category-page .uv-project-table td {
+        display: table-cell;
+        padding: 9px 10px;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    .category-page .uv-project-table-image img {
+        width: 64px;
+        height: 54px;
+        object-fit: cover;
+    }
+
+    .category-page .uv-project-table-description {
+        min-width: 180px;
+        overflow-wrap: anywhere;
+        font-size: 13px;
+    }
+
+    .category-page .uv-project-table-favorite .project-favorite-button {
+        position: static;
+        inset: auto;
+        transform: none;
+        display: inline-flex;
+        min-width: 44px;
+        min-height: 44px;
+        margin: 0 auto;
+        touch-action: manipulation;
+    }
+}

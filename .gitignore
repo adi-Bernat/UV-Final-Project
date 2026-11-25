@@ -1,0 +1,23 @@
+
+# ספריות שמותקנות אוטומטית
+node_modules/
+**/node_modules/
+
+# סיסמאות ומפתחות סודיים
+.env
+.env.*
+!.env.example
+
+# תיקיות בנייה
+dist/
+build/
+
+# קובצי לוג
+*.log
+
+# קבצים זמניים של המחשב
+.DS_Store
+Thumbs.db
+
+# תמונות פרופיל שהעלו משתמשים
+backsite/uploads/profiles/

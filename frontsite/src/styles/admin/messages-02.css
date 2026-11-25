@@ -1,0 +1,18 @@
+.admin-modal-actions button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.admin-modal-cancel {
+  background: #ded5c6;
+  color: #46533e;
+}
+
+.admin-modal-confirm {
+  background: #a34e45;
+  color: white;
+}
+
+.admin-modal-confirm:hover:not(:disabled) {
+  background: #843a33;
+}

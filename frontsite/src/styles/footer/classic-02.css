@@ -1,0 +1,91 @@
+.uv-footer-column .uv-footer-contact-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+
+    background: #f5f1e8;
+    color: #46533e;
+
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.uv-footer-column .uv-footer-contact-btn:hover {
+    background: #e5dac9;
+    color: #303d2b;
+    text-decoration: none;
+}
+
+/* זכויות יוצרים */
+
+.uv-footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px 0;
+
+    border-top: 1px solid #788371;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.uv-footer-bottom p {
+    color: #d5cfc1;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* התאמה לטאבלט */
+
+@media (max-width: 950px) {
+    .uv-footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+}
+
+/* התאמה לטלפון */
+
+@media (max-width: 600px) {
+    .uv-footer {
+        padding: 45px 22px 0;
+    }
+
+    .uv-footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 20px;
+    }
+
+    .uv-footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .uv-footer-column h3 {
+        font-size: 17px;
+    }
+
+    .uv-footer-column a,
+    .uv-footer-column p {
+        font-size: 14px;
+    }
+
+    .uv-footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 22px 0;
+    }
+}
+
+/* כפתורי רשתות חברתיות בפוטר */
+
+.uv-footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}

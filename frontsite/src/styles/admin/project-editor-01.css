@@ -1,0 +1,99 @@
+/* ADD PROJECT */
+
+.admin-add-navigation {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.admin-add-link {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #46533e;
+  color: #fffdf8;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+.admin-add-link:hover {
+  background: #303d2b;
+}
+
+.admin-add-page {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 25px;
+}
+
+.admin-add-page > .back-home-button {
+  display: flex;
+  width: max-content;
+  margin: 0 auto 50px;
+}
+
+.admin-add-page h1 {
+  font-size: 40px;
+  color: #46533e;
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+.admin-add-intro {
+  text-align: center;
+  color: #756b5e;
+  font-size: 18px;
+  margin: 0 0 45px;
+}
+
+.admin-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  background: #f1e8da;
+  border: 1px solid #ded1bd;
+  border-radius: 24px;
+
+  padding: 45px;
+}
+
+.admin-add-form label {
+  font-size: 17px;
+  font-weight: 600;
+  color: #46533e;
+}
+
+.admin-add-form input,
+.admin-add-form textarea,
+.admin-add-form select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d6c9b5;
+  border-radius: 12px;
+  background: #fffdf8;
+  color: #2f332d;
+  font: inherit;
+}
+
+.admin-add-form input:focus,
+.admin-add-form textarea:focus,
+.admin-add-form select:focus {
+  outline: 2px solid #79866d;
+}
+
+.admin-add-hint {
+  color: #756b5e;
+  font-size: 14px;
+  margin: -5px 0 10px;
+}
+
+.admin-add-form button {
+  background: #46533e;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 16px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 15px;
+}

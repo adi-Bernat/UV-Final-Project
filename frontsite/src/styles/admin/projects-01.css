@@ -1,0 +1,96 @@
+/* ADMIN PROJECTS */
+
+.admin-projects-navigation {
+  text-align: center;
+  margin: 0 0 60px;
+}
+
+.admin-projects-link {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #46533e;
+  color: #fffdf8;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.admin-projects-link:hover {
+  background: #303d2b;
+}
+
+.admin-projects-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+}
+
+.admin-projects-page > .back-home-button {
+  display: flex;
+  width: max-content;
+  margin: 0 auto 50px;
+}
+
+.admin-projects-page > h1 {
+  text-align: center;
+  color: #46533e;
+  font-size: 42px;
+  margin: 0 0 15px;
+}
+
+.admin-projects-intro {
+  text-align: center;
+  color: #756b5e;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.admin-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.admin-project-card {
+  background: #f1e8da;
+  border: 1px solid #ded1bd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.admin-project-card img,
+.admin-project-no-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.admin-project-no-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #756b5e;
+  background: #e7ddce;
+}
+
+.admin-project-content {
+  padding: 25px;
+}
+
+.admin-project-category {
+  color: #79866d;
+  font-size: 14px;
+}
+
+.admin-project-content h2 {
+  font-size: 23px;
+  color: #46533e;
+  margin: 12px 0;
+}
+
+.admin-project-content p {
+  color: #756b5e;
+  line-height: 1.7;
+  font-size: 16px;
+}

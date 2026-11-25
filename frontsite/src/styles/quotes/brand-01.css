@@ -1,0 +1,47 @@
+/* QUOTE LOGO HEADER */
+
+.admin-quotes-page .quote-brand-header {
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px auto 45px;
+  padding: 35px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  background: #f1e8da;
+  border-radius: 22px;
+}
+
+.quote-brand-logo {
+  width: 190px;
+  max-width: 75%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.quote-brand-header h1 {
+  font-size: 36px;
+  color: #46533e;
+  margin: 0 0 12px;
+}
+
+.quote-brand-header p {
+  font-size: 17px;
+  color: #87725d;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .quote-brand-logo {
+    width: 145px;
+  }
+
+  .quote-brand-header h1 {
+    font-size: 29px;
+  }
+}

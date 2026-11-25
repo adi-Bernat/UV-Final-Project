@@ -1,0 +1,30 @@
+/* כפתור הפקת PDF */
+
+.quote-pdf-button {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 15px 32px;
+
+  background: #46533e;
+  color: #fffdf8;
+
+  border: none;
+  border-radius: 30px;
+
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.quote-pdf-button:hover {
+  background: #303d2b;
+}
+
+/* עיצוב המסמך בהפקת PDF */
+
+@page {
+  size: A4;
+  margin: 12mm;
+}

@@ -1,0 +1,88 @@
+/* PROJECT DELETE BUTTON */
+
+.admin-project-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.admin-project-actions .admin-project-view {
+  margin-top: 0;
+}
+
+.admin-project-delete-button {
+  padding: 10px 18px;
+  border: 1px solid #c98b82;
+  border-radius: 25px;
+  background: transparent;
+  color: #a34e45;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.admin-project-delete-button:hover {
+  background: #f5e1dc;
+}
+
+/* EDIT PROJECT */
+
+.admin-project-edit-button {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #46533e;
+  color: #fffdf8;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.admin-project-edit-button:hover {
+  background: #303d2b;
+}
+
+.admin-edit-media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.admin-edit-media-item {
+  background: #fffdf8;
+  padding: 10px;
+  border-radius: 14px;
+  min-width: 0;
+}
+
+.admin-edit-media-item img,
+.admin-edit-media-item video {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.admin-edit-media-item button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #f5e1dc;
+  color: #a34e45;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.admin-edit-media-item button:hover {
+  background: #ebc8bf;
+}
+
+@media (max-width: 600px) {
+  .admin-edit-media-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

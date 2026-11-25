@@ -1,0 +1,82 @@
+/* =====================================
+   HEADER - MOBILE (ONE FILE ONLY)
+===================================== */
+@media (max-width: 768px) {
+  .site-header {
+    flex-wrap: wrap;
+    padding: 8px 16px;
+  }
+
+  .site-header .uv-mobile-menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-inline-start: auto;
+    padding: 10px 14px;
+    background: #46533e;
+    color: #f5f1e8;
+    border: 1px solid #f5f1e8;
+    border-radius: 10px;
+    font: inherit;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .site-header nav.uv-header-navigation {
+    display: none;
+    width: 100%;
+    flex-basis: 100%;
+    order: 3;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+    padding: 15px 0;
+  }
+
+  .site-header nav.uv-header-navigation.is-open {
+    display: flex;
+  }
+
+  .site-header nav.uv-header-navigation a,
+  .site-header nav.uv-header-navigation button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 15px;
+    text-align: right;
+    border-radius: 9px;
+  }
+
+  .site-header nav.uv-header-navigation .nav-logout-button {
+    order: initial;
+  }
+
+  .site-header nav.uv-header-navigation .uv-header-user-name {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 15px;
+    justify-content: flex-start;
+    text-align: right;
+    white-space: normal;
+  }
+}
+
+@media (min-width: 769px) {
+  .site-header .uv-mobile-menu-button {
+    display: none !important;
+  }
+
+  .site-header nav.uv-header-navigation {
+    display: flex;
+  }
+}
+
+/* התאמה להפחתת תנועה */
+html.uv-a11y2-motion .site-header *,
+html.uv-a11y2-motion .uv-skip-link {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}

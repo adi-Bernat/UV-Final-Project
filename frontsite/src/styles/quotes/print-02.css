@@ -1,0 +1,70 @@
+@media print {
+  body,
+  html,
+  #root {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  /* מסתירים את האתר והטופס */
+  .site-header,
+  .admin-quotes-page > .back-home-button,
+  .admin-quotes-page > .quote-brand-header,
+  .admin-quotes-page > h1,
+  .quote-form,
+  .quote-preview-heading,
+  .quote-pdf-button {
+    display: none !important;
+  }
+
+  /* משאירים רק את הצעת המחיר */
+  .admin-quotes-page {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .quote-client-preview {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .quote-preview-paper {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: white !important;
+  }
+
+  /* צבעי העסק בהדפסה */
+  .quote-preview-table th,
+  .quote-preview-final {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* מניעת חיתוך שורות */
+  .quote-preview-table thead {
+    display: table-header-group;
+  }
+
+  .quote-preview-table tr,
+  .quote-preview-final,
+  .quote-preview-signature {
+    break-inside: avoid;
+  }
+
+  .quote-preview-logo img {
+    max-width: 160px;
+  }
+}

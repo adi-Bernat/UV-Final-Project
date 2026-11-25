@@ -1,0 +1,45 @@
+/* =====================================
+   HEADER - ACCOUNT, LOGOUT AND LOGO
+===================================== */
+.site-header nav .nav-logout-button {
+  background: #46533e;
+  color: #fffdf8;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  order: -1;
+}
+
+.site-header nav .nav-logout-button:hover {
+  background: #303d2b;
+}
+
+.header-logo-crop {
+  height: 62px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.header-logo-crop .header-logo {
+  height: 80px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.site-header nav .uv-header-user-name {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  color: #46533e;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}

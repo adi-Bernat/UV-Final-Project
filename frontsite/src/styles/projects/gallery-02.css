@@ -1,0 +1,33 @@
+.gallery-arrow-left {
+  left: 20px;
+}
+
+.gallery-arrow:hover {
+  background: #56634f;
+
+  transform:
+    translateY(-50%)
+    scale(1.05);
+}
+
+/* מספר תמונה */
+
+.gallery-counter {
+  margin-top: 15px;
+
+  text-align: center;
+
+  color: #756957;
+
+  font-size: 16px;
+}
+
+/* אין תמונות */
+
+.no-project-media {
+  text-align: center;
+
+  color: #756957;
+
+  font-size: 17px;
+}

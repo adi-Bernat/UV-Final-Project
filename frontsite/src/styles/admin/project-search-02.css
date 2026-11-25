@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+  .admin-projects-filters {
+    flex-direction: column;
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .admin-projects-filters input,
+  .admin-projects-filters select {
+    flex: none;
+    width: 100%;
+  }
+}

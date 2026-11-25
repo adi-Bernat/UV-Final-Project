@@ -1,0 +1,44 @@
+@media (max-width: 480px) {
+  main {
+    padding: 35px 15px;
+  }
+
+  main#home > h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+  }
+
+  main#home > h2 {
+    font-size: 22px;
+  }
+
+  main#home > div {
+    padding: 20px;
+
+    border-radius: 15px;
+  }
+
+  main#home > div h3 {
+    font-size: 22px;
+  }
+
+  main#home > div p {
+    font-size: 16px;
+  }
+
+  main#home > div img {
+    height: 220px;
+  }
+
+  .back-home-button {
+    font-size: 16px;
+  }
+
+  .project-details-top {
+    margin-bottom: 45px;
+  }
+
+  .gallery-media img {
+    height: 300px;
+  }
+}

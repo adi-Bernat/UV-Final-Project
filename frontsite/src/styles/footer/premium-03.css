@@ -1,0 +1,72 @@
+.uv2-socials .uv2-social {
+  width: 45px;
+  height: 45px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f5f1e8;
+  background: rgba(245, 241, 232, 0.09);
+  border: 1px solid rgba(245, 241, 232, 0.22);
+  border-radius: 13px;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.uv2-socials .uv2-social svg {
+  width: 22px;
+  height: 22px;
+}
+
+.uv2-socials .uv2-social:hover {
+  background: #f5f1e8;
+  color: #46533e;
+  border-color: #f5f1e8;
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.uv2-social-caption {
+  color: #bfc9b6;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* שורה תחתונה */
+
+.uv2-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  padding: 25px 0;
+  border-top: 1px solid rgba(245, 241, 232, 0.2);
+
+  color: #bfc9b6;
+  font-size: 13px;
+}
+
+/* נגישות */
+
+.uv2-footer a:focus-visible {
+  outline: 2px solid #f5f1e8;
+  outline-offset: 4px;
+}
+
+/* טאבלט */
+
+@media (max-width: 1000px) {
+  .uv2-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+}
+
+/* טלפון */

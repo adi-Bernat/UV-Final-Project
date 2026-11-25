@@ -1,0 +1,44 @@
+.uv-users-page {
+  min-height: 75vh;
+  padding: 42px 18px 72px;
+  background: #f5f1e8;
+  color: #342a20;
+}
+.uv-users-content { max-width: 1120px; margin-inline: auto; }
+.uv-users-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 25px; }
+.uv-users-heading h1 { margin: 0 0 10px; font-size: clamp(1.6rem, 3vw, 2.3rem); }
+.uv-users-heading p { margin: 0; color: #695f54; }
+.uv-users-back { display: inline-flex; align-items: center; padding: 11px 16px; background: #e8ded0; border-radius: 10px; color: #342a20; text-decoration: none; font-weight: 600; }
+.uv-users-tools { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+.uv-users-tools label { font-weight: 600; }
+.uv-users-page input, .uv-users-page select { min-height: 44px; border: 1px solid #bdb2a4; border-radius: 8px; padding: 9px 12px; background: #fff; color: #342a20; font: inherit; }
+.uv-users-tools input { width: min(100%, 290px); }
+.uv-users-count { margin-inline-start: auto; font-size: .92rem; color: #695f54; }
+.uv-users-table-scroll { width: 100%; overflow-x: auto; border-radius: 14px; box-shadow: 0 8px 28px rgb(47 32 18 / 9%); }
+.uv-users-table { width: 100%; min-width: 750px; border-collapse: collapse; background: #fffdf8; text-align: right; }
+.uv-users-table th, .uv-users-table td { padding: 14px 13px; border-bottom: 1px solid #e9e0d5; vertical-align: middle; }
+.uv-users-table th { background: #ded0be; white-space: nowrap; }
+.uv-users-table tr:last-child td { border-bottom: 0; }
+.uv-users-table select { max-width: 180px; }
+.uv-users-email { direction: ltr; text-align: right; overflow-wrap: anywhere; }
+.uv-users-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.uv-users-actions button { font: inherit; font-weight: 600; cursor: pointer; padding: 9px 12px; border-radius: 8px; background: #675543; color: #fff; border: none; }
+.uv-users-actions button.uv-users-delete { background: #a14339; }
+.uv-users-actions button.uv-users-cancel { background: #ded0be; color: #342a20; }
+.uv-users-actions button:disabled, .uv-users-page select:disabled { opacity: .55; cursor: not-allowed; }
+.uv-users-role, .uv-users-locked { font-size: .9rem; color: #685849; }
+.uv-users-error, .uv-users-success { padding: 11px 14px; border-radius: 8px; margin: 15px 0; }
+.uv-users-error { background: #fce9e7; color: #7b211b; }
+.uv-users-success { background: #e7efdf; color: #354e29; }
+.uv-users-edit { max-width: 520px; padding: 24px; margin-top: 25px; border: 1px solid #d9cec0; background: #fffdf8; border-radius: 14px; }
+.uv-users-edit h2 { margin-top: 0; }
+.uv-users-edit form { display: grid; gap: 10px; }
+.uv-users-edit .uv-users-actions { margin-top: 10px; }
+@media (max-width: 720px) {
+  .uv-users-page { padding: 24px 12px 55px; }
+  .uv-users-tools { align-items: stretch; flex-direction: column; }
+  .uv-users-tools input { width: 100%; }
+  .uv-users-count { margin-inline-start: 0; }
+  .uv-users-table { min-width: 690px; }
+  .uv-users-table-scroll { -webkit-overflow-scrolling: touch; }
+}

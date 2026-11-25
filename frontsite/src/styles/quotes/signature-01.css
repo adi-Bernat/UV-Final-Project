@@ -1,0 +1,92 @@
+/* UV - customer quote signature */
+
+.quote-approval-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #46533e;
+}
+
+.quote-approval-form h3,
+.quote-signed-result h3 {
+  margin: 0 0 6px;
+  color: #46533e;
+}
+
+.quote-approval-form > p {
+  margin: 0 0 8px;
+  line-height: 1.8;
+}
+
+.quote-approval-form > label:not(.quote-approval-consent) {
+  font-weight: 600;
+}
+
+.quote-approval-form > input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid #ded5c7;
+  border-radius: 11px;
+  font: inherit;
+  background: #fff;
+  color: #343c31;
+}
+
+.quote-signature-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 700 / 220;
+  box-sizing: border-box;
+  background: white;
+  border: 2px dashed #b5bba9;
+  border-radius: 12px;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.quote-clear-signature {
+  align-self: flex-start;
+  padding: 9px 18px;
+  border: 1px solid #b6b9af;
+  border-radius: 22px;
+  background: #f7f4ed;
+  color: #46533e;
+  cursor: pointer;
+}
+
+.quote-approval-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.7;
+  margin-top: 5px;
+}
+
+.quote-approval-consent input {
+  margin-top: 6px;
+  flex: 0 0 auto;
+  accent-color: #46533e;
+}
+
+.quote-confirm-approval {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 28px;
+  background: #46533e;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.quote-confirm-approval:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.quote-approval-error {
+  color: #a2453c;
+  font-weight: 600;
+}

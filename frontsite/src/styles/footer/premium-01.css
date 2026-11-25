@@ -1,0 +1,91 @@
+/* ==================================
+   UV PREMIUM FOOTER
+================================== */
+
+.uv2-footer {
+  width: 100%;
+  box-sizing: border-box;
+  background: #46533e;
+  color: #f5f1e8;
+  direction: rtl;
+  font-family: inherit;
+}
+
+.uv2-footer * {
+  box-sizing: border-box;
+}
+
+.uv2-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 55px 40px 0;
+}
+
+/* כותרת עליונה */
+
+.uv2-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  padding: 38px 45px;
+  margin-bottom: 58px;
+
+  border: 1px solid rgba(245, 241, 232, 0.18);
+  border-radius: 22px;
+  background: rgba(245, 241, 232, 0.07);
+}
+
+.uv2-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #c8d0bf;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.uv2-top h2 {
+  color: #f5f1e8;
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+.uv2-top p {
+  color: #d7ddcf;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.uv2-main-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-shrink: 0;
+
+  padding: 16px 28px;
+
+  background: #f5f1e8;
+  color: #46533e;
+
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.uv2-main-button:hover {
+  background: #e7ddce;
+  color: #303d2b;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* ארבע עמודות */

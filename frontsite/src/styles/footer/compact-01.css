@@ -1,0 +1,99 @@
+/* ==================================
+   UV FOOTER - COMPACT VERSION
+================================== */
+
+/* הקטנת הרווחים הכלליים */
+
+.uv2-container {
+  padding-top: 28px;
+}
+
+/* אזור הכותרת העליונה */
+
+.uv2-top {
+  padding: 24px 32px;
+  margin-bottom: 32px;
+  border-radius: 18px;
+  gap: 20px;
+}
+
+.uv2-top h2 {
+  font-size: clamp(23px, 2.5vw, 30px);
+  margin-bottom: 6px;
+}
+
+.uv2-top p {
+  font-size: 14px;
+}
+
+.uv2-eyebrow {
+  margin-bottom: 7px;
+}
+
+/* הכפתור הראשי */
+
+.uv2-main-button {
+  padding: 12px 23px;
+  font-size: 14px;
+}
+
+/* הקטנת הרווחים בין העמודות */
+
+.uv2-content {
+  gap: 28px;
+  padding-bottom: 30px;
+}
+
+/* כותרות וקישורים */
+
+.uv2-column {
+  gap: 9px;
+}
+
+.uv2-column h3 {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.uv2-column > a {
+  font-size: 13px;
+}
+
+/* לוגו וטקסט */
+
+.uv2-brand {
+  gap: 12px;
+}
+
+.uv2-logo-box {
+  padding: 10px 16px;
+}
+
+.uv2-logo-box img {
+  width: 115px;
+}
+
+.uv2-brand p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* אייקונים חברתיים */
+
+.uv2-socials {
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.uv2-socials .uv2-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+}
+
+.uv2-socials .uv2-social svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* השורה התחתונה */

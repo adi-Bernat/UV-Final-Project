@@ -1,0 +1,235 @@
+[{
+  "_id": {
+    "$oid": "6ad6f87630d492d103d24e99"
+  },
+  "title": "פרגולת עץ",
+  "description": "פרגולה מעץ בגימור נקי ובהתאמה אישית.",
+  "category": "Pergola",
+  "location": "Pardes Hanna",
+  "image": "/projects/pergola-1.jpg",
+  "createdAt": {
+    "$date": "2026-10-20T05:13:26.632Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-27T11:30:45.097Z"
+  },
+  "__v": 0,
+  "images": [
+    "/projects/pergolas/pergola-1.jpg"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6ae08ef5dba0acbdff371a42"
+  },
+  "title": "פרגולת עץ מודרנית",
+  "description": "פרגולת עץ בקווים נקיים ובגימור מוקפד.",
+  "category": "Pergola",
+  "location": "",
+  "images": [
+    "/projects/pergolas/pergola-2.jpg"
+  ],
+  "videos": [
+    "/projects/pergolas/pergola-2-2-video.mp4"
+  ],
+  "createdAt": {
+    "$date": "2026-10-27T11:45:57.326Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-27T11:54:15.518Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ae0b755dba0acbdff371a43"
+  },
+  "title": "קירוי סנטף BH",
+  "description": "קירוי לפרגולה ואיטום הרמטי לגשם",
+  "category": "Suntuf",
+  "location": "",
+  "images": [
+    "/projects/pergolas/pergola-3.jpg"
+  ],
+  "videos": [],
+  "createdAt": {
+    "$date": "2026-10-27T14:38:13.307Z"
+  },
+  "updatedAt": {
+    "$date": "2026-11-09T18:52:07.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ae0b816dba0acbdff371a44"
+  },
+  "title": "קירוי סנטף למחסן",
+  "description": "התקנת קירוי סנטף למחסן ליצירת הגנה יעילה מגשם ושמש, עם גימור נקי ומסודר.",
+  "category": "Suntuf",
+  "location": "",
+  "images": [
+    "/projects/storage/storage-1.jpg"
+  ],
+  "videos": [],
+  "createdAt": {
+    "$date": "2026-10-27T14:41:26.373Z"
+  },
+  "updatedAt": {
+    "$date": "2026-11-09T18:52:45.151Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ae0bd3edba0acbdff371a46"
+  },
+  "title": "מחסן עץ בהתאמה אישית",
+  "description": "בניית מחסן עץ בהתאמה אישית, עם תכנון מדויק וגימור נקי.",
+  "category": "Storage",
+  "location": "",
+  "images": [
+    "/projects/storage/storage-2.jpg",
+    "/projects/storage/storage-2-2.jpeg",
+    "/projects/storage/storage-2-3.jpeg",
+    "/projects/storage/storage-2-4.jpeg"
+  ],
+  "videos": [],
+  "createdAt": {
+    "$date": "2026-10-27T15:03:26.693Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-27T15:03:26.693Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ae0be73dba0acbdff371a47"
+  },
+  "title": "חידוש סאונה מעץ",
+  "description": "חידוש סאונה קיימת, טיפול בעץ ושדרוג המראה בגימור נקי ומוקפד.",
+  "category": "Sauna Renovation",
+  "location": "",
+  "images": [
+    "/projects/sauna-renovation/sauna-1.jpg",
+    "/projects/sauna-renovation/sauna-1-2.jpg",
+    "/projects/sauna-renovation/sauna-1-3.jpg",
+    "/projects/sauna-renovation/sauna-1-4.jpg"
+  ],
+  "videos": [],
+  "createdAt": {
+    "$date": "2026-10-27T15:08:35.689Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-27T15:08:35.689Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ae0bf60dba0acbdff371a48"
+  },
+  "title": "בניית דק עץ",
+  "description": "בניית דק עץ בהתאמה אישית, עם עבודה מדויקת וגימור נקי.",
+  "category": "Deck",
+  "location": "",
+  "images": [
+    "/projects/decks/deck-1.jpg"
+  ],
+  "videos": [
+    "/projects/decks/deck-1-video.mp4"
+  ],
+  "createdAt": {
+    "$date": "2026-10-27T15:12:32.803Z"
+  },
+  "updatedAt": {
+    "$date": "2026-10-27T15:12:32.803Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6af1b8926fce11e05346d85a"
+  },
+  "title": "גדר עץ",
+  "description": "בניית גדר עץ בהתאמה אישית, בגימור נקי ומדויק.",
+  "category": "Fence",
+  "location": "",
+  "images": [
+    "/projects/fences/fences-1.jpg"
+  ],
+  "videos": [],
+  "createdAt": {
+    "$date": "2026-11-09T12:12:02.506Z"
+  },
+  "updatedAt": {
+    "$date": "2026-11-09T12:12:02.506Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6af1b9e36fce11e05346d85b"
+  },
+  "title": "בניית גדר עץ בהתאמה אישית",
+  "description": "בניית גדר עץ בעיצוב טבעי, בהתאמה לשטח ולסגנון הבית.",
+  "category": "Fence",
+  "location": "",
+  "images": [
+    "/projects/fences/fences-2.jpg"
+  ],
+  "videos": [],
+  "createdAt": {
+    "$date": "2026-11-09T12:17:39.940Z"
+  },
+  "updatedAt": {
+    "$date": "2026-11-09T16:41:06.209Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6af1bab36fce11e05346d85c"
+  },
+  "title": "חידוש דק עץ",
+  "description": "חידוש ושדרוג דק עץ קיים, להחזרת המראה הטבעי והיפה של העץ.",
+  "category": "Deck Renovation",
+  "location": "",
+  "images": [
+    "/projects/deck-renovation/deckr-1.jpg"
+  ],
+  "videos": [
+    "/projects/deck-renovation/deckr-1-video.mp4"
+  ],
+  "createdAt": {
+    "$date": "2026-11-09T12:21:07.011Z"
+  },
+  "updatedAt": {
+    "$date": "2026-11-09T14:03:40.703Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6af2114f52b27f9319079683"
+  },
+  "title": "קירויי סנטף",
+  "description": "קירויי סנטף ואיטום פרגולה",
+  "category": "Suntuf",
+  "location": "",
+  "images": [
+    "/projects/suntuf/b59b0d5a-94dc-4874-a9c0-1730fa0b2114.jpeg",
+    "/projects/suntuf/355d7467-c744-4b76-98db-51373063a356.jpeg"
+  ],
+  "videos": [
+    "/projects/suntuf/03844429-8b88-41e6-b37f-9f96153ec53d.mp4"
+  ],
+  "createdAt": {
+    "$date": "2026-11-09T18:30:39.449Z"
+  },
+  "updatedAt": {
+    "$date": "2026-11-09T18:30:39.449Z"
+  },
+  "__v": 0
+}]

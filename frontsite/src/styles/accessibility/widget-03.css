@@ -1,0 +1,44 @@
+html.uv-a11y2-contrast body :is(a, button) {
+  color: #ffe27a !important;
+}
+
+/* הפחתת תנועה */
+
+html.uv-a11y2-motion *,
+html.uv-a11y2-motion *::before,
+html.uv-a11y2-motion *::after {
+  animation-duration: 0.01ms !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* התאמה לטלפון */
+
+@media (max-width: 600px) {
+  .uv-a11y2-widget {
+    bottom: 12px;
+    left: 12px;
+  }
+
+  .uv-a11y2-panel {
+    padding: 18px;
+  }
+}
+
+/* הסתרה בהדפסה */
+
+@media print {
+  .uv-a11y2-widget {
+    display: none !important;
+  }
+}

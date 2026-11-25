@@ -1,0 +1,92 @@
+/* ==============================
+   UV FOOTER
+============================== */
+
+.uv-footer {
+    width: 100%;
+    box-sizing: border-box;
+    background: #46533e;
+    color: #f5f1e8;
+    padding: 65px 25px 0;
+    direction: rtl;
+}
+
+.uv-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 50px;
+
+    padding-bottom: 55px;
+}
+
+/* לוגו */
+
+.uv-footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.uv-footer-logo-box {
+    background: #f5f1e8;
+    padding: 12px 20px;
+    border-radius: 14px;
+    width: fit-content;
+}
+
+.uv-footer-logo-box img {
+    display: block;
+    width: 135px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.uv-footer-brand p {
+    color: #e0dbcf;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 280px;
+    margin: 0;
+}
+
+/* עמודות */
+
+.uv-footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.uv-footer-column h3 {
+    color: #fffaf0;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.uv-footer-column a {
+    color: #e0dbcf;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.uv-footer-column a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.uv-footer-column p {
+    color: #e0dbcf;
+    line-height: 1.8;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* כפתור צור קשר */

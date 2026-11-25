@@ -1,0 +1,94 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 35px;
+  direction: rtl;
+}
+
+.about-intro {
+  max-width: 900px;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.about-label {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #8d7961;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.about-intro h1 {
+  margin: 0 0 35px;
+  font-size: clamp(34px, 5vw, 54px);
+  color: #46533e;
+}
+
+.about-intro p {
+  max-width: 760px;
+  margin: 0 auto 22px;
+  color: #6e675b;
+  font-size: 19px;
+  line-height: 2;
+}
+
+.about-values {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about-values h2 {
+  font-size: 34px;
+  color: #46533e;
+  margin-bottom: 45px;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.about-value-card {
+  padding: 45px 28px;
+  background: #f1e8da;
+  border: 1px solid #ded1bd;
+  border-radius: 22px;
+
+  transition: transform 0.3s ease;
+}
+
+.about-value-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-value-card h3 {
+  font-size: 23px;
+  color: #4b5545;
+  margin: 0 0 20px;
+}
+
+.about-value-card p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #756b5e;
+  margin: 0;
+}
+
+.about-bottom {
+  text-align: center;
+  background: #eee5d6;
+  padding: 60px 25px;
+  border-radius: 25px;
+}
+
+.about-bottom h2 {
+  font-size: 32px;
+  color: #46533e;
+  margin: 0 0 20px;
+}

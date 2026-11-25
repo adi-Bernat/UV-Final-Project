@@ -1,0 +1,97 @@
+/* ADMIN LOGIN */
+
+.admin-login-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 90px 20px;
+  min-height: 85vh;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 50px 40px;
+  background: #f1e8da;
+  border: 1px solid #ded1bd;
+  border-radius: 24px;
+  box-shadow: 0 8px 28px rgba(60, 55, 45, 0.08);
+  text-align: center;
+}
+
+.admin-login-card h1 {
+  font-size: 32px;
+  color: #46533e;
+  margin: 0 0 12px;
+}
+
+.admin-login-card > p {
+  color: #87725d;
+  font-size: 18px;
+  margin: 0 0 35px;
+}
+
+.admin-login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: right;
+}
+
+.admin-login-card label {
+  color: #46533e;
+  font-weight: 600;
+}
+
+.admin-login-card input {
+  width: 100%;
+  padding: 15px;
+  background: #fffdf8;
+  border: 1px solid #d6c9b5;
+  border-radius: 12px;
+  font: inherit;
+}
+
+.admin-login-card input:focus {
+  outline: 2px solid #79866d;
+}
+
+.admin-login-card button {
+  padding: 15px;
+  margin-top: 15px;
+  background: #46533e;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.admin-login-card button:hover {
+  background: #303d2b;
+}
+
+.admin-login-card button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.admin-login-error {
+  color: #a33b32;
+  font-size: 15px;
+}
+
+.admin-login-success {
+  color: #46533e;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .admin-login-card {
+    padding: 35px 22px;
+  }
+}
+
+/* תיקון שדות ההתחברות */

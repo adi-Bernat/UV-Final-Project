@@ -1,0 +1,165 @@
+.admin-login-card input {
+  background-color: #fffdf8;
+  color: #2f332d !important;
+  -webkit-text-fill-color: #2f332d;
+  caret-color: #46533e;
+  font-size: 17px;
+}
+
+.admin-login-card input::placeholder {
+  color: #8b857b;
+  opacity: 1;
+}
+
+.admin-login-card input:focus {
+  border-color: #46533e;
+  outline: 2px solid #79866d;
+}
+
+/* =====================================
+   LOGIN FORM - VALIDATION
+===================================== */
+
+/* בחירת סוג חשבון */
+
+.admin-login-card .uv-login-role-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    border: none;
+    padding: 0;
+    margin: 22px 0;
+}
+
+.admin-login-card .uv-login-role-group legend {
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #46533e;
+}
+
+.admin-login-card .uv-login-role-choice {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid #46533e;
+    border-radius: 10px;
+
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.admin-login-card .uv-login-role-choice:has(input:checked) {
+    background: #e9eee5;
+}
+
+.admin-login-card .uv-login-role-choice input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    accent-color: #46533e;
+}
+
+/* הודעות מתחת לשדות */
+
+.admin-login-card .uv-login-feedback {
+    display: block;
+    margin: 5px 0 16px;
+
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.admin-login-card .uv-login-feedback.is-hint {
+    color: #6b7167;
+}
+
+.admin-login-card .uv-login-feedback.is-valid {
+    color: #26723c;
+    font-weight: 600;
+}
+
+.admin-login-card .uv-login-feedback.is-invalid {
+    color: #b42318;
+    font-weight: 600;
+}
+
+/* מסגרת לשדה תקין או שגוי */
+
+.admin-login-card input.uv-login-field-valid {
+    border: 2px solid #26723c;
+}
+
+.admin-login-card input.uv-login-field-invalid {
+    border: 2px solid #b42318;
+}
+
+/* הצגת סיסמה */
+
+.admin-login-card .uv-login-password-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 14px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.admin-login-card .uv-login-password-toggle input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    accent-color: #46533e;
+}
+
+/* הודעות וכפתור */
+
+.admin-login-card .uv-login-form-info,
+.admin-login-card .uv-login-submit-help {
+    color: #6b7167;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.admin-login-card .uv-login-submit-help {
+    text-align: center;
+}
+
+.admin-login-card .uv-login-success {
+    color: #26723c;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.admin-login-card button[type="submit"]:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+/* קישורים */
+
+.admin-login-card .uv-login-register-text,
+.admin-login-card .uv-login-back-home {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.admin-login-card .uv-login-register-text a,
+.admin-login-card .uv-login-back-home a {
+    color: #46533e;
+    font-weight: 600;
+}
+
+/* נגישות במקלדת */
+
+.admin-login-card input:focus-visible,
+.admin-login-card button:focus-visible,
+.admin-login-card a:focus-visible {
+    outline: 3px solid #d99b47;
+    outline-offset: 3px;
+}

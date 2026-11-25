@@ -1,0 +1,71 @@
+.uv2-bottom {
+  padding: 16px 0;
+}
+
+/* התאמה לטלפון */
+
+@media (max-width: 650px) {
+  .uv2-container {
+    padding: 22px 18px 0;
+  }
+
+  .uv2-top {
+    padding: 22px;
+    margin-bottom: 30px;
+    gap: 16px;
+  }
+
+  .uv2-top h2 {
+    font-size: 24px;
+  }
+
+  .uv2-content {
+    gap: 26px 18px;
+    padding-bottom: 25px;
+  }
+
+  .uv2-main-button {
+    padding: 12px 20px;
+  }
+
+  .uv2-bottom {
+    padding: 15px 0;
+  }
+}
+
+/* ==================================
+   MOBILE FOOTER - LOGO AND TEXT
+================================== */
+
+@media (max-width: 650px) {
+
+  .uv2-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .uv2-logo-box {
+    flex: 0 0 auto;
+    padding: 8px 10px;
+    border-radius: 12px;
+  }
+
+  .uv2-logo-box img {
+    width: 78px;
+    height: auto;
+  }
+
+  .uv2-brand p {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: right;
+  }
+}
